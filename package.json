@@ -2,9 +2,9 @@
   "name": "@cybertale/resolver",
   "version": "0.1.2",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Joso997/cybertale-resolver.git"
@@ -13,7 +13,16 @@
   "bugs": {
     "url": "https://github.com/Joso997/cybertale-resolver/issues"
   },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  },
   "peerDependencies": {
     "@cybertale/interface": "*"
+  },
+  "dependencies": {
+    "uuid": "^10.0.0"
   }
 }

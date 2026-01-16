@@ -23,3 +23,11 @@ export * as FinalizeDefaults from './resolver/finalize/defaults'
 export * as HandlersRemove from './resolver/handlers/remove'
 export * as HandlersInsert from './resolver/handlers/insert'
 export * as HandlersUpdate from './resolver/handlers/update'
+export * as HandlersTemplate from './resolver/handlers/template'
+
+// assignments
+export { WrapperAbstract } from './resolver/assignments/wrapperAbstract'
+export { FormWrapper } from './resolver/assignments/formWrapper'
+export { RowWrapper } from './resolver/assignments/rowWrapper'
+export { TableWrapper } from './resolver/assignments/tableWrapper'
+export type { ResolverInterface } from './resolver/assignments/resolverInterface'
