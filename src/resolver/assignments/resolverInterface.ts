@@ -7,6 +7,7 @@ export interface ResolverInterface<T> {
   FormButton (wrapper: T): Promise<ObjectTemplate[]>
   FormRadio (wrapper: T): Promise<ObjectTemplate[]>
   FormField (wrapper: T): Promise<ObjectTemplate[]>
+  FormText (wrapper: T): Promise<ObjectTemplate[]>
   RowButton (wrapper: T): Promise<ObjectTemplate[]>
   TableButton (wrapper: T): Promise<ObjectTemplate[]>
 }
